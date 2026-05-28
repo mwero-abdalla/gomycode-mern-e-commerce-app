@@ -1,0 +1,29 @@
+{
+  "name": "mern-e-shop",
+  "version": "1.0.0",
+  "description": "Comprehensive starter e-commerce application built with the MERN stack (MongoDB, Express, React, Node). This repository contains a separate `client` (React + Vite + TypeScript) and `server` (Node + Express) folders with a minimal e-shop backend and frontend scaffold.",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "concurrently  \"npm run install:client\" \"npm run install:server\"",
+    "install:client":"cd ./client && npm i",
+     "install:server":"cd ./server && npm i",
+    "run-client": "cd ./client && npm run dev",
+    "run-server": "cd ./server && npm run dev",
+    "dev": "concurrently \"npm run run-client\" \"npm run run-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwero-abdalla/gomycode-mern-e-commerce-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mwero-abdalla/gomycode-mern-e-commerce-app/issues"
+  },
+  "homepage": "https://github.com/mwero-abdalla/gomycode-mern-e-commerce-app#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.0"
+  }
+}
